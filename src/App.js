@@ -2,6 +2,14 @@ import logo from './logo.svg'
 import './App.css'
 import React from 'react'
 
+function MyButton () {
+  return (
+      <button>
+        Im a button
+      </button>
+  )
+}
+
 function App () {
   return (
     <div className="App">
@@ -19,6 +27,7 @@ function App () {
           Learn React
         </a>
       </header>
+        <MyButton />
     </div>
   )
 }
