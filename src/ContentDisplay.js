@@ -15,9 +15,10 @@ const ContentDisplay = ({ contentPages }) => {
     }, 1000)
   }
 
+  // Load the first page of content when the component mounts
   useEffect(() => {
     fetchNextPage()
-  }, []) // Fetch the initial page
+  }, [])
 
   // Add a listener for scroll events
   useEffect(() => {
@@ -25,7 +26,7 @@ const ContentDisplay = ({ contentPages }) => {
       // Check if the user has scrolled to the bottom of the page
       if (
         window.innerHeight + window.scrollY >=
-                document.body.offsetHeight - 100
+          document.body.offsetHeight - 100
       ) {
         // Load the next page when nearing the bottom
         if (!loading && currentPage < contentPages.length - 1) {
@@ -41,16 +42,17 @@ const ContentDisplay = ({ contentPages }) => {
   }, [currentPage, loading, contentPages])
 
   return (
-        <div>
-            {contentPages[currentPage].map((item, index) => (
-                <div key={index}>{item}</div>
-            ))}
-            {loading && <p>Loading...</p>}
-        </div>
+      <div>
+        {contentPages[currentPage].map((item, index) => (
+            <div key={index}>{item}</div>
+        ))}
+        {loading && <p>Loading...</p>}
+      </div>
   )
 }
 
 ContentDisplay.propTypes = {
   contentPages: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired
 }
+
 export default ContentDisplay

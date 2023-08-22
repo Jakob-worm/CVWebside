@@ -7,14 +7,16 @@ const resources = {
   en: {
     translation: {
       greeting: 'Hello, World!',
-      home: 'Home'
+      home: 'Home',
+      AboutMeTitle: 'About me'
       // Add more translations here
     }
   },
   den: {
     translation: {
       greeting: 'Hej, Verden!',
-      home: 'Hjem'
+      home: 'Hjem',
+      AboutMeTitle: 'Om mig'
       // Add more translations here
     }
   }
