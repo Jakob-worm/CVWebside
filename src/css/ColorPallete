@@ -1,0 +1,6 @@
+/* SCSS RGB */
+$ghost-white: rgba(232, 233, 243, 1);
+$silver: rgba(206, 206, 206, 1);
+$french-gray: rgba(166, 166, 168, 1);
+$raisin-black: rgba(39, 38, 53, 1);
+$non-photo-blue: rgba(177, 229, 242, 1);
