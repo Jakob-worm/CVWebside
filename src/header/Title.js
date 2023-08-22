@@ -1,12 +1,12 @@
 // src/Title.js
-import './css/Title.css'
+import '../css/Title.css'
 import React from 'react'
 
 function Title () {
   return (
         <div className="Title">
-            <h1>SFPOPOS</h1>
-            <div className="Title-Subtitle">San Franciscos Privately Owned Public Spaces</div>
+            <h1>Title text</h1>
+            <div className="Title-Subtitle">Subtitle</div>
         </div>
   )
 }
