@@ -15,23 +15,28 @@ const ContentDisplay = ({ contentPages }) => {
     }, 1000)
   }
 
-  // Load the first page of content when the component mounts
+  const scrollToPreviousPage = () => {
+    // Allow scrolling back to the previous page
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1)
+    }
+  }
+
   useEffect(() => {
     fetchNextPage()
   }, [])
 
-  // Add a listener for scroll events
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the user has scrolled to the bottom of the page
-      if (
-        window.innerHeight + window.scrollY >=
-          document.body.offsetHeight - 100
-      ) {
-        // Load the next page when nearing the bottom
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
         if (!loading && currentPage < contentPages.length - 1) {
           fetchNextPage()
         }
+      }
+
+      // Allow scrolling back to the previous page when scrolling up
+      if (window.scrollY === 0) {
+        scrollToPreviousPage()
       }
     }
 

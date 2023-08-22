@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 // Import of image (adjust the path and filename as needed)
-import aboutMeImage from './pictures/cocktail-svgrepo-com.svg'
+import aboutMeImage from '../pictures/cocktail-svgrepo-com.svg'
 
 function AboutMe () {
   const { t } = useTranslation()

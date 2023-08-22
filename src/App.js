@@ -4,7 +4,7 @@ import Title from './header/Title'
 import { useTranslation } from 'react-i18next'
 import ContentDisplay from './ContentDisplay'
 import staticContent from './contentData' // Import the content modul
-import AboutMe from './AboutMe'
+import AboutMe from './ScrollContent/AboutMe'
 
 function App () {
   const { t } = useTranslation()
