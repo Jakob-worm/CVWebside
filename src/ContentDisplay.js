@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 
 const ContentDisplay = ({ contentPages }) => {
   const [currentPage, setCurrentPage] = useState(0)
   const [loading, setLoading] = useState(false)
+  const contentRef = useRef(null)
 
   const fetchNextPage = () => {
     setLoading(true)
@@ -16,7 +17,6 @@ const ContentDisplay = ({ contentPages }) => {
   }
 
   const scrollToPreviousPage = () => {
-    // Allow scrolling back to the previous page
     if (currentPage > 0) {
       setCurrentPage(currentPage - 1)
     }
@@ -44,7 +44,14 @@ const ContentDisplay = ({ contentPages }) => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [currentPage, loading, contentPages])
+  }, [loading, contentPages])
+
+  // Scroll to the last content element on the current page when it changes
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [currentPage])
 
   return (
       <div>
@@ -52,6 +59,7 @@ const ContentDisplay = ({ contentPages }) => {
             <div key={index}>{item}</div>
         ))}
         {loading && <p>Loading...</p>}
+        <div ref={contentRef}></div>
       </div>
   )
 }
