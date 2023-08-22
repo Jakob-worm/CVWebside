@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 const ContentDisplay = ({ contentPages }) => {
   const [currentPage, setCurrentPage] = useState(0)
   const [loading, setLoading] = useState(false)
+  const [noMoreContent, setNoMoreContent] = useState(false) // Flag to track no more content
   const contentRef = useRef(null)
 
   const fetchNextPage = () => {
@@ -11,7 +12,12 @@ const ContentDisplay = ({ contentPages }) => {
 
     // Simulate a delay for loading (you can remove this in production)
     setTimeout(() => {
-      setCurrentPage(currentPage + 1)
+      if (currentPage < contentPages.length - 1) {
+        setCurrentPage(currentPage + 1)
+      } else {
+        // Set the flag when there is no more content to load
+        setNoMoreContent(true)
+      }
       setLoading(false)
     }, 1000)
   }
@@ -28,7 +34,7 @@ const ContentDisplay = ({ contentPages }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+      if (!noMoreContent && window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
         if (!loading && currentPage < contentPages.length - 1) {
           fetchNextPage()
         }
@@ -40,15 +46,20 @@ const ContentDisplay = ({ contentPages }) => {
       }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    // Add or remove the scroll event listener based on the noMoreContent flag
+    if (!noMoreContent) {
+      window.addEventListener('scroll', handleScroll)
+    } else {
+      window.removeEventListener('scroll', handleScroll)
+    }
+
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [currentPage, loading, contentPages])
+  }, [currentPage, loading, contentPages, noMoreContent])
 
   useEffect(() => {
     if (contentRef.current) {
-      // Scroll to the bottom of the content container
       contentRef.current.scrollTop = contentRef.current.scrollHeight
     }
   }, [currentPage])
@@ -58,6 +69,7 @@ const ContentDisplay = ({ contentPages }) => {
         {contentPages[currentPage].map((item, index) => (
             <div key={index}>{item}</div>
         ))}
+        {noMoreContent && <p>No more content</p>}
         {loading && <p>Loading...</p>}
       </div>
   )
