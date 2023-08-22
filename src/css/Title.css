@@ -23,3 +23,6 @@
     margin-left: 3vw; /* Adjust the margin value to move the items to the right */
     color: rgba(232, 233, 243, 1);
 }
+.Title-ChangeLangaugeButtons{
+    margin-left: auto; /* Move the buttons to the rightmost corner */
+}

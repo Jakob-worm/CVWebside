@@ -8,7 +8,7 @@ function Title () {
         <div className="Title">
             <div className="Main-Title">Title text</div>
             <div className="Title-Subtitle">Subtitle</div>
-            <ChangeLanguageButton />
+            <div className="Title-ChangeLangaugeButtons"> <ChangeLanguageButton /> </div>
         </div>
   )
 }
