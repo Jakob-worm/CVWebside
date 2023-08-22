@@ -11,7 +11,7 @@ function MyButton () {
 }
 
 function MyHeader () {
-    return (
+  return (
         <div>
             <header className={'top-bar'}>
                 <p>
