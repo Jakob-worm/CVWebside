@@ -5,7 +5,7 @@ import React from 'react'
 function Title () {
   return (
         <div className="Title">
-            <h1>Title text</h1>
+            <div className="Main-Title">Title text</div>
             <div className="Title-Subtitle">Subtitle</div>
         </div>
   )

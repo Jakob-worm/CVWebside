@@ -3,14 +3,23 @@
     box-sizing: border-box;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: baseline;
-    padding: 1em;
-    margin-bottom: 2em;
+    padding: 1.5vw;
+    margin-bottom: 1vw;
     background-color: rgba(39, 38, 53, 1);
     color: rgba(232, 233, 243, 1);
 }
 
+/* Target the specific items within .Title that you want to move to the right */
+.Main-Title {
+    margin-left: 3vw; /* Adjust the margin value to move the items to the right */
+    color: rgba(232, 233, 243, 1);
+    font-size: 3vw;
+}
+
 .Title-Subtitle {
-    color: rgba(255, 255, 255, 0.75);
+    font-size: 2vw;
+    margin-left: 3vw; /* Adjust the margin value to move the items to the right */
+    color: rgba(232, 233, 243, 1);
 }
