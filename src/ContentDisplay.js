@@ -44,22 +44,21 @@ const ContentDisplay = ({ contentPages }) => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [loading, contentPages])
+  }, [currentPage, loading, contentPages])
 
-  // Scroll to the last content element on the current page when it changes
   useEffect(() => {
     if (contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: 'smooth' })
+      // Scroll to the bottom of the content container
+      contentRef.current.scrollTop = contentRef.current.scrollHeight
     }
   }, [currentPage])
 
   return (
-      <div>
+      <div ref={contentRef}>
         {contentPages[currentPage].map((item, index) => (
             <div key={index}>{item}</div>
         ))}
         {loading && <p>Loading...</p>}
-        <div ref={contentRef}></div>
       </div>
   )
 }
