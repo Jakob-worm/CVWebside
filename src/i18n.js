@@ -6,13 +6,15 @@ import { initReactI18next } from 'react-i18next'
 const resources = {
   en: {
     translation: {
-      greeting: 'Hello, World!'
+      greeting: 'Hello, World!',
+      home: 'Home'
       // Add more translations here
     }
   },
   den: {
     translation: {
-      greeting: 'Hej, Verden!'
+      greeting: 'Hej, Verden!',
+      home: 'Hjem'
       // Add more translations here
     }
   }
