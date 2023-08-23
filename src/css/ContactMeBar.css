@@ -2,7 +2,7 @@
     box-sizing: border-box;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center; /* Vertically center items within the bar */
     padding: 10px 20px; /* Add padding for spacing */
     background-color: rgba(39, 38, 53, 1);
