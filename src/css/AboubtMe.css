@@ -1,30 +1,37 @@
 /* Center the content within the AboutMe-Container */
 .AboutMe-Container {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100vh; /* 100% of the viewport height */
 }
 
-/* Add any additional styling as needed */
-.AboutMe-Title {
-    flex: 1; /* Expand to fill available space */
-    font-size: 2vw;
-    font-weight: bold;
+/* Style for the content wrapper */
+.AboutMe-ContentWrapper {
+    display: flex;
+    flex-direction: row; /* Align children horizontally */
 }
 
-.AboubtMe-Content {
+/* Text content on the left */
+.AboutMe-Text {
     flex: 1; /* Expand to fill available space */
-    font-size: 1vw;
+}
+
+/* Title above the image */
+.AboutMe-Title {
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left; /* Align the title to the left */
+    margin-right: 10px; /* Add spacing between title and content */
+    margin-bottom: 10px; /* Add spacing between title and content */
 }
 
 /* Image on the right */
 .AboutMe-ImageWrapper {
-    flex: 2; /* Expand to fill available space */
+    flex: 1; /* Expand to fill available space */
     text-align: center; /* Center the image horizontally */
 }
 
+/* Make the image smaller */
 .AboutMe-Image {
     max-width: 20vw;
     height: auto;
