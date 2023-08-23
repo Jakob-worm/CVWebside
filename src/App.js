@@ -11,9 +11,11 @@ function App () {
   return (
     <div className='App'>
         <Title />
-        <h1>{t('greeting')}</h1>
-        <div>
-            <ContentDisplay contentPages={[[<AboutMe key="aboutMe" />], ...staticContent]} />
+        <div className='content-container'>
+            <h1>{t('greeting')}</h1>
+            <div>
+                <ContentDisplay contentPages={[[<AboutMe key="aboutMe" />], ...staticContent]} />
+            </div>
         </div>
     </div>
   )
