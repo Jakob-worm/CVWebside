@@ -15,4 +15,9 @@
 
 .ContactMe-Text {
     color: rgba(232, 233, 243, 1);
+    font-weight: bold;
+}
+
+a.ContactMe-LinkedIn {
+    color: rgba(232, 233, 243, 1);
 }
