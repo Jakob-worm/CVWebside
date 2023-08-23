@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import '../css/AboubtMe.css'
 
 // Import of image (adjust the path and filename as needed)
 import aboutMeImage from '../pictures/cocktail-svgrepo-com.svg'
