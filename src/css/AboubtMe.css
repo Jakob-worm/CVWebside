@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh; /* 100% of the viewport height */
+    width: 100vh;
+    margin-left: 28vh; /* the position left*/
+    margin-top: 18vh; /* the placement from top and bottom*/
 }
 
 /* Style for the content wrapper */
