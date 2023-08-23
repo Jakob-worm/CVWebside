@@ -1,25 +1,28 @@
 /* Center the content within the AboutMe-Container */
 .AboutMe-Container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100vh; /* 100% of the viewport height */
 }
 
-/* Style for the content wrapper */
-.AboutMe-ContentWrapper {
-    text-align: center; /* Center text content */
-}
-
 /* Add any additional styling as needed */
 .AboutMe-Title {
+    flex: 1; /* Expand to fill available space */
     font-size: 2vw;
     font-weight: bold;
 }
 
-.AboutMe-Content {
+.AboubtMe-Content {
+    flex: 1; /* Expand to fill available space */
     font-size: 1vw;
+}
+
+/* Image on the right */
+.AboutMe-ImageWrapper {
+    flex: 2; /* Expand to fill available space */
+    text-align: center; /* Center the image horizontally */
 }
 
 .AboutMe-Image {
