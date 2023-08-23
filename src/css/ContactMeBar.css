@@ -12,3 +12,7 @@
     left: 0;
     z-index: 1000;
 }
+
+.ContactMe-Text {
+    color: rgba(232, 233, 243, 1);
+}
