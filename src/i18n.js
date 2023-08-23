@@ -9,7 +9,7 @@ const resources = {
       greeting: 'Hello, World!',
       home: 'Home',
       AboutMeTitle: 'About me',
-      AboutMeContent: 'Textual description of me as a person',
+      AboutMeContent: 'Hi, my name is Jakob and I am a 23-year-old IT-product development student. Through my study, I have worked on many projects ranging from physical products that incorporate digital technology to fully digital solutions. I created this website to showcase these projects.',
       ContactMeText: 'Contact me on:'
       // Add more translations here
     }
@@ -19,7 +19,7 @@ const resources = {
       greeting: 'Hej, Verden!',
       home: 'Hjem',
       AboutMeTitle: 'Om mig',
-      AboutMeContent: 'En beskrivlse af mig som person',
+      AboutMeContent: 'Hej mit navn er Jakob og jeg er en 23 årigede IT-produktudvikling studrende. Gemmen mit studie har jeg lavet en masse fede projekter som jeg gerne vil vise lidt frem. Derfor har jeg lavet denne hjemmeside.  ',
       ContactMeText: 'Kontakt mig på:'
       // Add more translations here
     }
