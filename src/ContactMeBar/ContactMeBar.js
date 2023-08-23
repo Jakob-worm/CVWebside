@@ -17,7 +17,7 @@ function ContactMeBar () {
                 <div >LinkedIn</div>
             </a>
             <div className="ContactMe-Phone"> Tlf. +4552271200</div>
-            <div className="ContactMe-Mail"> Email jkbwrm@gmail.com </div>
+            <div className="ContactMe-Mail"> Email: jkbwrm@gmail.com </div>
         </div>
   )
 }
