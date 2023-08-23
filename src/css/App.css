@@ -3,7 +3,8 @@
 }
 
 .content-container {
-  padding-top: 60px; /* Add padding to the content below the navbar */
+  padding-top: 4vw; /* Add padding to the content below the navbar */
+  padding-bottom: 4vw; /* Add padding to the content above the bottom bar */
 }
 
 .App-logo {

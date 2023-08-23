@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import ContentDisplay from './ContentDisplay'
 import staticContent from './contentData' // Import the content modul
 import AboutMe from './ScrollContent/AboutMe'
+import ContactMeBar from './ContactMeBar/ContactMeBar'
 
 function App () {
   const { t } = useTranslation()
@@ -17,6 +18,7 @@ function App () {
                 <ContentDisplay contentPages={[[<AboutMe key="aboutMe" />], ...staticContent]} />
             </div>
         </div>
+        <ContactMeBar />
     </div>
   )
 }
