@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.content-container {
+  padding-top: 60px; /* Add padding to the content below the navbar */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

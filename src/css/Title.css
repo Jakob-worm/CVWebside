@@ -5,10 +5,13 @@
     display: flex;
     justify-content: left;
     align-items: baseline;
-    padding: 1.5vw;
     margin-bottom: 1vw;
     background-color: rgba(39, 38, 53, 1);
     color: rgba(232, 233, 243, 1);
+    position: fixed;
+    top: 0; /* Place it at the top of the viewport */
+    left: 0;
+    z-index: 1000;
 }
 
 /* Target the specific items within .Title that you want to move to the right */
