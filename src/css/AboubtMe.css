@@ -14,12 +14,12 @@
 
 /* Add any additional styling as needed */
 .AboutMe-Title {
-    font-size: 24px;
+    font-size: 2vw;
     font-weight: bold;
 }
 
 .AboutMe-Content {
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 .AboutMe-Image {
