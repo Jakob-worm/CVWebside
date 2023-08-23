@@ -10,7 +10,7 @@ function WorkAndEducation () {
         <div className="WorkAndEducation-Container">
             <div className="WorkAndEducation-Title">{t('AboutMeTitle')}</div>
             <div className="WorkAndEducation-Content">{t('AboutMeContent')}</div>
-            <img src={aboutMeImage} alt="About Me" className="AboubtMe-Image" />
+            <img src={aboutMeImage} alt="About Me" className="AboutMe-Image" />
         </div>
   )
 }

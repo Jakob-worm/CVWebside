@@ -13,7 +13,7 @@ function AboutMe () {
             <div className="AboubtMe-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec et odio pellentesque. Cursus euismod quis viverra nibh cras pulvinar mattis. Arcu ac tortor dignissim convallis. Arcu dui vivamus arcu felis bibendum. Suspendisse sed nisi lacus sed viverra tellus in hac. Congue nisi vitae suscipit tellus mauris. Est lorem ipsum dolor sit amet. Massa sed elementum tempus egestas sed sed. Nec ullamcorper sit amet risus nullam eget felis.
 
                 Nibh tortor id aliquet lectus proin nibh. Nulla aliquet enim tortor at auctor urna nunc id. Vivamus at augue eget arcu dictum varius duis. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Vitae sapien pellentesque habitant morbi. Neque convallis a cras semper auctor neque vitae tempus. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Cras pulvinar mattis nunc sed blandit. Vulputate mi sit amet mauris. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Neque gravida in fermentum et sollicitudin ac orci phasellus. Imperdiet proin fermentum leo vel.</div>
-            <img src={aboutMeImage} alt="About Me" className="AboubtMe-Image" />
+            <img src={aboutMeImage} alt="About Me" className="AboutMe-Image" />
         </div>
   )
 }

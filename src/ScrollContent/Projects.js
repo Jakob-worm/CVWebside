@@ -6,7 +6,7 @@ import projectTestImage from '../pictures/car-svgrepo-com.svg'
 function Projects () {
   return (
         <div className="Project's-Container">
-            <img src={projectTestImage} alt="About Me" className="AboubtMe-Image" />
+            <img src={projectTestImage} alt="About Me" className="AboutMe-Image" />
         </div>
   )
 }
